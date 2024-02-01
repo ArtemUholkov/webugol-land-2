@@ -1,0 +1,35 @@
+.team_content_title {
+  font-size: 28px;
+  color: var(--main-text-color);
+  font-weight: 600;
+  line-height: 110%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.team_content_subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--subcolor);
+  text-align: left;
+}
+.team_swiper_slide {
+  gap: 16px;
+}
+.team_content_wrapper {
+  align-items: flex-start;
+  width: 100%;
+}
+.team_subtitle {
+  max-width: 820px;
+}
+.team_swiper_wrapper {
+  gap: 0;
+}
+.swiper_wrapper {
+  gap: 0;
+}
+@media (max-width: 1510px) {
+  .team_swiper_wrapper {
+    gap: 0;
+  }
+}

@@ -1,0 +1,70 @@
+.mySwipermainpic {
+  width: 100%;
+  max-width: 480px;
+  max-height: 640px;
+  height: 100%;
+  margin-right: 100px;
+  overflow: visible;
+}
+
+.slidemainpic {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  position: relative;
+}
+.img_from_left {
+  position: absolute;
+  bottom: 130px;
+  left: -300px;
+  max-width: 552px;
+  width: 100%;
+}
+.slidemainpic .img_from_left {
+  max-width: 552px;
+  width: auto;
+  height: auto;
+}
+.wrappermainpic {
+  overflow: visible;
+}
+.main_picture_swiper_wrapper {
+  width: 57%;
+  overflow: hidden;
+}
+.img_from_right {
+  position: absolute;
+  bottom: 80px;
+  right: -60px;
+}
+.slidemainpic .img_from_right {
+  width: auto;
+  height: auto;
+}
+.switcher {
+  padding: 23px 26px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.switcher_text {
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.switcher_actually {
+}

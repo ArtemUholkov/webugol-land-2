@@ -1,0 +1,15 @@
+h1 {
+  font-size: 35px;
+}
+.main_picture_content_wrapper {
+  justify-content: flex-start;
+  gap: 30px;
+  margin-top: 38svh;
+}
+@media (max-width: 600px) {
+  .main_picture_content_wrapper {
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 30svh;
+  }
+}

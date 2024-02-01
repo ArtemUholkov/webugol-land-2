@@ -1,0 +1,241 @@
+.sub {
+  width: 100%;
+  border-radius: 60px 60px 0px 0px;
+  border-top: 1px solid #6c01f6;
+  background: linear-gradient(180deg, #390181 0%, #0f0022 24.57%, #111 87.46%);
+  margin-top: 100px;
+  min-height: 516px;
+  padding: 100px 150px;
+  position: relative;
+}
+.sub_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sub_content_text {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.52px;
+  max-width: 605px;
+  color: var(--main-text-color);
+  white-space: nowrap;
+}
+.sub_form {
+  max-width: 605px;
+
+  width: 100%;
+}
+.sub_logo {
+  position: absolute;
+  bottom: 58px;
+  left: 151px;
+}
+form {
+  background-color: transparent;
+  max-width: 604px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  margin-top: 10px;
+}
+
+label {
+  position: relitive;
+  display: inline-block;
+  color: var(--main-text-color);
+  top: 100px;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  z-index: 10;
+  position: relative;
+  top: -30px;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+}
+
+input[type='text'] {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 0 5px 0;
+  color: var(--main-text-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px rgba(254, 254, 254, 0.6);
+  outline: none;
+  z-index: 20;
+}
+input[type='text']:focus {
+  border-bottom: solid 1px white;
+}
+
+input[type='text']:focus ~ label,
+input[type='text']:valid ~ label {
+  top: -60px;
+  font-size: 18px;
+  color: var(--subcolor);
+}
+
+input[type='tel'] {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 0 5px 0;
+  color: var(--main-text-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px rgba(254, 254, 254, 0.6);
+  outline: none;
+  z-index: 20;
+}
+input[type='tel']:focus {
+  border-bottom: solid 1px white;
+}
+
+input[type='tel']:focus ~ label,
+input[type='tel']:valid ~ label {
+  top: -60px;
+  font-size: 18px;
+  color: var(--subcolor);
+}
+
+input[type='email'] {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 0 5px 0;
+  color: var(--main-text-color);
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px rgba(254, 254, 254, 0.6);
+  outline: none;
+  z-index: 20;
+}
+input[type='email']:focus {
+  border-bottom: solid 1px white;
+}
+
+input[type='email']:focus ~ label,
+input[type='email']:valid ~ label {
+  top: -60px;
+  font-size: 18px;
+  color: var(--subcolor);
+}
+
+.form_button {
+  font-size: 18px;
+  border: 0;
+  font-weight: 600;
+  padding: 20px 40px;
+}
+.form_button:hover {
+  cursor: pointer;
+}
+.deco_line_wrapper {
+  padding: 10px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub_deco_line {
+  width: 100%;
+  height: 1px;
+  background-color: #707070;
+
+  z-index: 90;
+}
+@media (max-width: 1500px) {
+  .sub {
+    padding: 100px 100px;
+  }
+  .deco_line_wrapper {
+    padding: 10px 100px;
+  }
+  .sub_logo {
+    left: 101px;
+  }
+}
+@media (max-width: 1340px) {
+  .sub_wrapper {
+    gap: 20px;
+  }
+  .deco_line_wrapper {
+    padding: 10px 20px;
+  }
+  .sub_content_text {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1000px) {
+  .sub {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 900px) {
+  .sub_wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .sub_logo {
+    top: 45px;
+    right: 23px;
+    left: auto;
+    bottom: auto;
+    height: 125px;
+    width: 132px;
+  }
+  .sub {
+    padding: 60px 20px;
+  }
+  .sub_content_text {
+    text-align: center;
+  }
+  input[type='text'] {
+    font-size: 14px;
+  }
+  input[type='text']:focus ~ label,
+  input[type='text']:valid ~ label {
+    font-size: 14px;
+  }
+
+  input[type='tel'] {
+    font-size: 14px;
+  }
+  input[type='tel']:focus ~ label,
+  input[type='tel']:valid ~ label {
+    font-size: 14px;
+  }
+
+  input[type='email'] {
+    font-size: 14px;
+  }
+  input[type='email']:focus ~ label,
+  input[type='email']:valid ~ label {
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+  }
+  .form_button {
+    font-size: 14px;
+
+    font-weight: 600;
+    padding: 15px 24px;
+  }
+}
+@media (max-width: 600px) {
+  .form_button {
+    display: flex;
+  }
+}

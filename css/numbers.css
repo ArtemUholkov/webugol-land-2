@@ -1,0 +1,257 @@
+.numbers {
+  background-color: var(--main-bg-color);
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+.number_wrapper {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.numbers_text {
+  max-width: 1190px;
+  color: var(--usual-decorations);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+.numbers_items_wrapper {
+  max-width: 1153px;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+.numbers_items_line_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+.numbers_deco_line {
+  height: 127px;
+  width: 1px;
+  background: rgba(242, 245, 247, 0.63);
+}
+.numbers_item {
+  display: flex;
+  flex-direction: column;
+}
+.numbers_item_number {
+  color: var(--main-text-color);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: normal;
+}
+.numbers_item_subtext {
+  color: var(--main-text-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+.mob_text {
+  display: none;
+}
+.img_running_line {
+  gap: 83px;
+}
+.main_corechair {
+  max-width: 163px;
+  max-height: 129px;
+}
+.corechair {
+  max-width: 190px;
+  max-height: 190px;
+}
+.lhk {
+  max-width: 258px;
+  max-height: 94px;
+}
+.servotech {
+  max-width: 288px;
+  max-height: 112px;
+}
+.optyx {
+  max-width: 175px;
+  max-height: 47px;
+}
+.valhalla {
+  max-width: 190px;
+  max-height: 117px;
+}
+.lefttoright {
+  animation: lefttoright 50s infinite alternate linear;
+}
+.imgrighttoleft {
+  animation: imgrighttoleft 50s infinite alternate linear;
+}
+.pad-fix {
+  padding: 0;
+}
+.running-line_wrapper img {
+  transition: all 0.5s;
+  opacity: 0.7;
+}
+.wrap_line {
+  width: 100svw;
+  overflow: hidden;
+}
+.running-line_wrapper img:hover {
+  transition: all 0.5s;
+  opacity: 1;
+}
+/* .numbers_form {
+  max-width: 800px;
+  width: 100%;
+  max-height: 375px;
+  height: 375px;
+  margin-bottom: 100px;
+} */
+@keyframes lefttoright {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(160%);
+  }
+}
+
+@keyframes imgrighttoleft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-160%);
+  }
+}
+
+@keyframes lefttorightmob {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(400%);
+  }
+}
+
+@keyframes imgrighttoleftmob {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-400%);
+  }
+}
+@media (max-width: 1600px) {
+  .number_wrapper {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .number_wrapper {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .numbers_text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 950px) {
+  .numbers_text {
+    display: none;
+  }
+  .mob_text {
+    display: block;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .numbers_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+  }
+
+  .numbers_items_wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .numbers_item_number {
+    /* align-self: flex-start; */
+    font-size: 48px;
+  }
+  .numbers_item_subtext {
+    font-size: 14px;
+    text-align: center;
+  }
+  .number_wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0;
+    padding-bottom: 40px;
+  }
+  .numbers_items_line_wrapper {
+    align-items: center;
+  }
+
+  .main_corechair {
+    max-width: 103px;
+    max-height: 82px;
+  }
+  .corechair {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .lhk {
+    width: 164.002px;
+    height: 60.016px;
+  }
+  .servotech {
+    width: 182.977px;
+    height: 71.269px;
+  }
+  .optyx {
+    width: 111.142px;
+    height: 30.008px;
+  }
+  .valhalla {
+    width: 120.629px;
+    height: 74.27px;
+  }
+  .img_running_line {
+    gap: 40px;
+  }
+  .numbers {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .lefttoright {
+    animation: lefttorightmob 35s infinite alternate linear;
+  }
+  .imgrighttoleft {
+    animation: imgrighttoleftmob 35s infinite alternate linear;
+  }
+}
+@media (max-width: 426px) {
+  .numbers_item_number {
+    font-size: 38px;
+  }
+  .numbers_item_subtext {
+    width: 179px;
+  }
+  .numbers_item {
+    justify-content: space-between;
+  }
+  .numbers_deco_line {
+    display: none;
+  }
+}
