@@ -75,7 +75,6 @@ let copiedText = document.querySelectorAll('#trythis');
 copiedText.forEach((elem) => elem.addEventListener('click', () => copyText(elem)));
 console.log(colorLogo);
 
-
 $(window).on('scroll', function () {
   if ($(window).scrollTop() > 50) {
     $('.header').addClass('active');
