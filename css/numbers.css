@@ -8,7 +8,7 @@
 .number_wrapper {
   padding-left: 150px;
   padding-right: 150px;
-  padding-bottom: 100px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,6 @@
   max-width: 1153px;
   display: flex;
   gap: 40px;
-  margin-bottom: 100px;
 }
 .numbers_items_line_wrapper {
   display: flex;
@@ -111,6 +110,7 @@
   height: 375px;
   margin-bottom: 100px;
 } */
+
 @keyframes lefttoright {
   from {
     transform: translateX(0%);
@@ -152,17 +152,15 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .number_wrapper {
-    padding-left: 20px;
-  }
-}
 @media (max-width: 1200px) {
   .numbers_text {
     font-size: 30px;
   }
 }
 @media (max-width: 950px) {
+  .numbers_deco_line {
+    display: none;
+  }
   .numbers_text {
     display: none;
   }
@@ -197,7 +195,6 @@
     width: 90%;
     margin: 0 auto;
     padding: 0 0;
-    padding-bottom: 40px;
   }
   .numbers_items_line_wrapper {
     align-items: center;
