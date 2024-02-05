@@ -42,6 +42,11 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+  .ready {
+    width: 100%;
+
+    padding-top: 60px;
+  }
 }
 @media (max-width: 900px) {
   .ready_wrapper {

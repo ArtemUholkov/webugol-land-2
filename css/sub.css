@@ -323,8 +323,15 @@ input[type='radio']:hover {
   .sub {
     padding: 60px 50px;
   }
+  .form_button {
+    margin-top: 0;
+  }
 }
 @media (max-width: 600px) {
+  .form_button {
+    display: block;
+    margin-top: 0;
+  }
   .sub {
     padding: 60px 20px;
   }

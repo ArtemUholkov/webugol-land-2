@@ -104,6 +104,12 @@
   transition: all 0.5s;
   opacity: 1;
 }
+iframe body {
+  height: auto !important;
+}
+iframe html {
+  height: auto !important;
+}
 /* .numbers_form {
   max-width: 800px;
   width: 100%;
