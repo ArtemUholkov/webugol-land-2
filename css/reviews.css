@@ -24,6 +24,7 @@
 .reviews_video_image {
   object-fit: cover;
   transition: all 1s;
+  border-radius: 36px;
 }
 
 .playbutton_wrapper {
