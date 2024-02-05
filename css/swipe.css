@@ -315,9 +315,13 @@
     font-size: 35px;
     max-width: 311px;
   }
+  .main_picture_text_container {
+    margin-top: 90px;
+  }
   .main_picture_subtitle {
     font-size: 17px;
     max-width: 311px;
+    margin-bottom: 30px;
   }
   .main_main_button {
     font-size: 9px;
