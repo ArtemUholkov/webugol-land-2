@@ -122,11 +122,11 @@ input[type='email'] {
   color: var(--main-text-color);
   background-color: transparent;
   border: none;
-  border-bottom: solid 1px rgba(254, 254, 254, 0.6);
+
   outline: none;
   z-index: 20;
 }
-input[type='email']:focus {
+/* input[type='email']:focus {
   border-bottom: solid 1px white;
 }
 
@@ -135,7 +135,7 @@ input[type='email']:valid ~ label {
   top: -60px;
   font-size: 18px;
   color: var(--subcolor);
-}
+} */
 
 .form_button {
   font-size: 18px;
@@ -167,7 +167,7 @@ input[type='email']:valid ~ label {
   width: 45%;
   display: flex;
   flex-direction: column;
-  gap: 158px;
+  gap: 140px;
 }
 .form_pair_wrapper {
   display: flex;
@@ -215,7 +215,7 @@ textarea {
   width: 45%;
   display: flex;
   flex-direction: column;
-  gap: 128px;
+  gap: 60px;
 }
 .mainform_inputs_wrapper {
   display: flex;
@@ -300,6 +300,9 @@ input[type='radio']:hover {
   align-items: flex-start;
   gap: 62px;
 }
+input:focus::placeholder {
+  opacity: 0;
+}
 @media (max-width: 1520px) {
   .sub {
     padding: 100px 100px;
@@ -325,6 +328,11 @@ input[type='radio']:hover {
   }
   .form_button {
     margin-top: 0;
+  }
+}
+@media (max-width: 660px) {
+  .form_pair_wrapper {
+    flex-direction: column;
   }
 }
 @media (max-width: 600px) {

@@ -900,20 +900,28 @@
               </div>
               <div class="question_wrapper">
                 <p class="form_question" data-aos="zoom-in">
-                  What is the target location of your potential?
+                  Phone Number,<br />
+                  Email
                 </p>
                 <p class="form_subquestion" data-aos="zoom-in">
-                  We will collect data for your specific area
+                  Phone number and email help to better communicate with you!
                 </p>
                 <div class="form_pair_wrapper">
                   <div class="input-container">
-                    <textarea
-                      name="extra_target"
-                      placeholder="Write your target location"
-                    ></textarea>
+                    <input
+                      required
+                      type="tel"
+                      name="extra_phone_number"
+                      placeholder="Valid phone number"
+                      class="phone_numba"
+                    />
+                  </div>
+                  <div class="input-container">
+                    <input required type="email" name="extra_email" placeholder="Valid email" />
                   </div>
                 </div>
               </div>
+
               <div class="question_wrapper">
                 <p class="form_question" data-aos="zoom-in">What's your website link?</p>
                 <p class="form_subquestion" data-aos="zoom-in">
@@ -928,18 +936,18 @@
             </div>
             <div class="form_right_side_wrapper">
               <div class="question_wrapper">
-                <p class="form_question" data-aos="zoom-in">Phone Number</p>
+                <p class="form_question" data-aos="zoom-in">
+                  What is the target location of your potential?
+                </p>
                 <p class="form_subquestion" data-aos="zoom-in">
-                  The phone field is optional, but it helps to better communicate with you!
+                  We will collect data for your specific area
                 </p>
                 <div class="form_pair_wrapper">
                   <div class="input-container">
-                    <input
-                      required
-                      type="tel"
-                      name="extra_phone_number"
-                      placeholder="Please enter a valid phone number"
-                    />
+                    <textarea
+                      name="extra_target"
+                      placeholder="Write your target location"
+                    ></textarea>
                   </div>
                 </div>
               </div>
@@ -967,25 +975,56 @@
                   <div class="form_selector_wrapper">
                     <div class="wrap_three_radio">
                       <div class="radio">
-                        <input type="radio" id="fst" name="invest" value="$1000 - $2000" checked />
+                        <input
+                          class="radio_but"
+                          type="radio"
+                          id="fst"
+                          name="invest"
+                          value="$1000 - $2000"
+                          checked
+                        />
                         <label for="fst" class="radio-label">$1000 - $2000</label>
                       </div>
                       <div class="radio">
-                        <input type="radio" id="scd" name="invest" value="$2000 - $5000" />
+                        <input
+                          class="radio_but"
+                          type="radio"
+                          id="scd"
+                          name="invest"
+                          value="$2000 - $5000"
+                        />
                         <label for="scd" class="radio-label">$2000 - $5000</label>
                       </div>
                       <div class="radio">
-                        <input type="radio" id="trd" name="invest" value="$5000 - $10000" />
+                        <input
+                          class="radio_but"
+                          type="radio"
+                          id="trd"
+                          name="invest"
+                          value="$5000 - $10000"
+                        />
                         <label for="trd" class="radio-label">$5000 - $10000</label>
                       </div>
                     </div>
                     <div class="wrap_two_radio">
                       <div class="radio">
-                        <input type="radio" id="fth" name="invest" value="> $10000" />
+                        <input
+                          class="radio_but"
+                          type="radio"
+                          id="fth"
+                          name="invest"
+                          value="> $10000"
+                        />
                         <label for="fth" class="radio-label">> $10000</label>
                       </div>
                       <div class="radio">
-                        <input type="radio" id="more" name="invest" value="I don't know yet" />
+                        <input
+                          class="radio_but"
+                          type="radio"
+                          id="more"
+                          name="invest"
+                          value="I don't know yet"
+                        />
                         <label for="more" class="radio-label">I don't know yet</label>
                       </div>
                     </div>
@@ -996,6 +1035,9 @@
             </div>
           </div>
           <input id="js_send" type="submit" value="Send" class="main_button form_button" />
+          <div class="input-container hiden">
+            <input type="text" name="extra_budget" class="hiden_radio" value="" />
+          </div>
         </form>
       </div>
     </section>
