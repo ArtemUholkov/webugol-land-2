@@ -112,7 +112,7 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
-    padding-bottom: 250px;
+    /* padding-bottom: 250px; */
   }
   .bglogofooter {
     left: 90px;
@@ -136,11 +136,14 @@
     height: 40px;
     width: 138px;
   }
+  .rightside_l {
+    display: none;
+  }
 }
 @media (max-width: 900px) {
   .footer_wrapper {
     padding: 60px 20px;
-    padding-bottom: 250px;
+    /* padding-bottom: 250px; */
   }
 }
 @media (max-width: 600px) {

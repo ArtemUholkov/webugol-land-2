@@ -8,16 +8,16 @@
   border-radius: 36px;
 }
 .reviews_image_wrapper:hover {
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 .reviews_image_wrapper:hover .reviews_video_image {
-  /* cursor: pointer; */
+  cursor: pointer;
   transform: scale(1.1);
   transition: all 1s;
   border-radius: 36px;
 }
 .reviews_image_wrapper:hover .playbutton_wrapper {
-  /* cursor: pointer; */
+  cursor: pointer;
   opacity: 0.7;
   transition: all 1s;
 }
@@ -93,10 +93,19 @@
 .modal-dialog {
   max-width: 1000px;
   overflow-anchor: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal-content {
   overflow-anchor: none;
 }
+/* .modal.fade.show {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+} */
 @media (max-width: 1725px) {
   .reviews_swiper_slide {
     max-width: 350px;
