@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '969975690335674');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=969975690335674&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -887,26 +916,13 @@
                   Please share your contact information
                 </p>
                 <p class="form_subquestion" data-aos="zoom-in">
-                  You'll receive the market analysis.
+                  We will use it to send you the market analysis
                 </p>
                 <div class="form_pair_wrapper">
                   <div class="input-container">
-                    <input required type="text" name="extra_name" placeholder="First Name" />
+                    <input required type="text" name="extra_name" placeholder="Your Name" />
                   </div>
-                  <div class="input-container">
-                    <input required type="text" name="extra_last_name" placeholder="Last name" />
-                  </div>
-                </div>
-              </div>
-              <div class="question_wrapper">
-                <p class="form_question" data-aos="zoom-in">
-                  Phone Number,<br />
-                  Email
-                </p>
-                <p class="form_subquestion" data-aos="zoom-in">
-                  Phone number and email help to better communicate with you!
-                </p>
-                <div class="form_pair_wrapper">
+
                   <div class="input-container">
                     <input
                       required
@@ -921,6 +937,16 @@
                   </div>
                 </div>
               </div>
+              <!-- <div class="question_wrapper">
+                <p class="form_question" data-aos="zoom-in">
+                  Phone Number,<br />
+                  Email
+                </p>
+                <p class="form_subquestion" data-aos="zoom-in">
+                  Phone number and email help to better communicate with you!
+                </p>
+                <div class="form_pair_wrapper"></div>
+              </div> -->
 
               <div class="question_wrapper">
                 <p class="form_question" data-aos="zoom-in">What's your website link?</p>
@@ -929,7 +955,7 @@
                 </p>
                 <div class="form_pair_wrapper">
                   <div class="input-container">
-                    <textarea name="extra_link" placeholder="Your website link"></textarea>
+                    <input type="text" name="extra_link" placeholder="Your website link" />
                   </div>
                 </div>
               </div>
@@ -944,10 +970,11 @@
                 </p>
                 <div class="form_pair_wrapper">
                   <div class="input-container">
-                    <textarea
+                    <input
+                      type="text"
                       name="extra_target"
                       placeholder="Write your target location"
-                    ></textarea>
+                    />
                   </div>
                 </div>
               </div>

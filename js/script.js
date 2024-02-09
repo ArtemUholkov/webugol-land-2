@@ -123,8 +123,8 @@ console.log(data.attributes.profile.data.attributes);
 var form_id_js = 'javascript_form';
 
 var data_js = {
-  access_token: 'b6ptufawi5qmc6uw1hqngyoz',
-  // access_token: 'fi2138nc5t3t25unwm7thdou',
+  // access_token: 'b6ptufawi5qmc6uw1hqngyoz',
+  access_token: 'lpgmnbh6kohqx636g2aq7tfv',
 };
 
 function js_onSuccess() {
@@ -204,7 +204,7 @@ function js_send() {
   var subject = document.querySelector('#' + form_id_js + " [name='Subject']").value;
   var message = document.querySelector('#' + form_id_js + " [name='text']").value;
   var name = document.querySelector('#' + form_id_js + " [name='extra_name']").value;
-  var lastname = document.querySelector('#' + form_id_js + " [name='extra_last_name']").value;
+  // var lastname = document.querySelector('#' + form_id_js + " [name='extra_last_name']").value;
   var link = document.querySelector('#' + form_id_js + " [name='extra_link']").value;
   var phone = document.querySelector('#' + form_id_js + " [name='extra_phone_number']").value;
   var about = document.querySelector('#' + form_id_js + " [name='extra_about']").value;
@@ -217,14 +217,14 @@ function js_send() {
   data_js['extra_name'] = name;
   data_js['extra_link'] = link;
   data_js['extra_phone_number'] = phone;
-  data_js['extra_last_name'] = lastname;
+  // data_js['extra_last_name'] = lastname;
   data_js['extra_about'] = about;
   data_js['extra_target'] = location;
   data_js['extra_budget'] = radres;
   data_js['extra_email'] = email;
 
   data.attributes.profile.data.attributes.first_name = name;
-  data.attributes.profile.data.attributes.last_name = lastname;
+  // data.attributes.profile.data.attributes.last_name = lastname;
   data.attributes.profile.data.attributes.phone_number = phone;
   data.attributes.profile.data.attributes.email = email;
 

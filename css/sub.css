@@ -142,7 +142,7 @@ input[type='email']:valid ~ label {
   border: 0;
   font-weight: 600;
   padding: 20px 40px;
-  width: 170px;
+  width: 210px;
   align-self: flex-end;
   margin-top: 60px;
 }
@@ -167,10 +167,12 @@ input[type='email']:valid ~ label {
   width: 45%;
   display: flex;
   flex-direction: column;
-  gap: 140px;
+  gap: 100px;
 }
 .form_pair_wrapper {
   display: flex;
+  flex-direction: column;
+
   align-items: center;
   justify-content: space-between;
   gap: 32px;
@@ -209,13 +211,13 @@ textarea {
   border: none;
   outline: none;
   z-index: 20;
-  height: 97px;
+  height: 67px;
 }
 .form_right_side_wrapper {
   width: 45%;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 30px;
 }
 .mainform_inputs_wrapper {
   display: flex;
