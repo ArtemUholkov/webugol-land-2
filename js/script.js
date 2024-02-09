@@ -73,7 +73,6 @@ function scrollToSub() {
 }
 let copiedText = document.querySelectorAll('#trythis');
 copiedText.forEach((elem) => elem.addEventListener('click', () => copyText(elem)));
-console.log(colorLogo);
 
 $(window).on('scroll', function () {
   if ($(window).scrollTop() > 50) {
@@ -116,8 +115,6 @@ data = {
   },
   relationships: { list: { data: { type: 'list', id: 'YADZga' } } },
 };
-
-console.log(data.attributes.profile.data.attributes);
 
 //update this with your js_form selector
 var form_id_js = 'javascript_form';
@@ -233,7 +230,7 @@ function js_send() {
     headers: { revision: '2023-10-15', 'content-type': 'application/json' },
     body: JSON.stringify({ data }),
   };
-  console.log(options);
+
   fetch('https://a.klaviyo.com/client/subscriptions/?company_id=TbQjBA', options)
     .then((response) => response)
     .then((response) => console.log(response))

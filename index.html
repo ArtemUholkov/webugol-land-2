@@ -1182,7 +1182,6 @@
       swipermain.on('transitionEnd', function (e) {
         allsliders.forEach((item) => {
           if (item.classList.contains('swiper-slide-active')) {
-            console.log(item);
             setTimeout(() => {
               item.children[3].children[1].children[0].checked = true;
             }, 1000);
